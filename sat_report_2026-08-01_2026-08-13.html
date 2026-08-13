@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>US CSS 满意度报告 — 2026-08-01 ~ 2026-08-13</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, "Segoe UI", Arial, sans-serif; background: #f5f7fa; color: #1a1a2e; padding: 32px 28px; max-width: 1200px; margin: 0 auto; }
+h1 { font-size: 24px; font-weight: 700; color: #1456F0; margin-bottom: 6px; border-bottom: 3px solid #1456F0; padding-bottom: 12px; text-align: center; }
+.subtitle { font-size: 13px; color: #666; margin-bottom: 28px; text-align: center; }
+h2 { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 16px; padding: 10px 18px;
+     background: linear-gradient(135deg, #1456F0, #3d7ff5); border-radius: 8px; display: flex; align-items: center; gap: 8px; }
+.sect-num { background: rgba(255,255,255,.25); border-radius: 4px; padding: 2px 8px; font-size: 13px; }
+.section { background: #fff; border-radius: 12px; padding: 26px 28px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,.07); }
+.cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+th { background: #eef2ff; color: #1456F0; text-align: center; padding: 10px; border-bottom: 2px solid #c0d0f0; white-space: nowrap; }
+th:first-child { text-align: left; }
+td { padding: 8px 10px; border-bottom: 1px solid #eef0f5; white-space: nowrap; text-align: center; vertical-align: middle; }
+td:first-child { text-align: left; }
+.team-row td { font-weight: 600; background: #f0f4ff; }
+tr:hover td { background: #f8f9ff; }
+.en { font-size: 11px; color: #999; font-weight: 400; }
+.csat-good { color: #15803d; font-weight: 700; }
+.csat-bad  { color: #dc2626; font-weight: 700; }
+.csat-na   { color: #bbb; }
+.csat-warn { color: #f59e0b; font-weight: 700; }
+.subsect-title { font-size: 13.5px; font-weight: 700; color: #1456F0; margin: 0 0 10px 0; padding: 5px 0 7px; border-bottom: 1px solid #d0daf8; }
+.subsect-title.mt { margin-top: 24px; }
+.kpi-box { display: grid; grid-template-columns: repeat(7, 1fr); gap: 14px; margin-bottom: 20px; }
+.kpi { background: #eef2ff; border-radius: 10px; padding: 14px 12px; text-align: center; }
+.kpi-val { font-size: 28px; font-weight: 700; color: #1456F0; }
+.kpi-val.red { color: #dc2626; }
+.kpi-val.amber { color: #f59e0b; }
+.kpi-lbl { font-size: 11px; color: #888; margin-top: 4px; }
+.neg-total { color: #dc2626; font-weight: 600; }
+.pct-col { color: #64748b; font-size: 12px; }
+@media (max-width: 800px) { .cols2 { grid-template-columns: 1fr; } .kpi-box { grid-template-columns: repeat(4, 1fr); } }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<h1>US CSS 满意度分析</h1>
+<p class="subtitle">2026-08-01 ~ 2026-08-13 &nbsp;|&nbsp; Conversion CS Team (12 agents)</p>
+
+<div style="background:#f0f4ff;border-left:4px solid #1456F0;border-radius:0 8px 8px 0;padding:14px 20px;margin-bottom:24px">
+  <div style="font-size:13px;font-weight:700;color:#1456F0;margin-bottom:8px">数据摘要</div>
+  <ul style="list-style:none;font-size:13px;color:#333;line-height:1.9">
+    <li style="display:flex;gap:6px"><span style="color:#1456F0">·</span><span>团队整体 CSAT <b class="csat-good">88.1%</b>（目标 ≥84%，已达标），总评价 101 条，负评 12 条</span></li><li style="display:flex;gap:6px"><span style="color:#1456F0">·</span><span>主要负评原因：开户前咨询（7 条）、开户后咨询（3 条）</span></li><li style="display:flex;gap:6px"><span style="color:#1456F0">·</span><span>最低 CSAT 渠道：邮件 Email（80.0%）</span></li><li style="display:flex;gap:6px"><span style="color:#1456F0">·</span><span>低于达标线客服：calventan（83.3%）、azamuddin（75.0%）、zaydentan（75.0%）、jeanliew（62.5%）</span></li>
+  </ul>
+</div>
+
+<!-- 一: 总览 -->
+<div class="section">
+  <h2><span class="sect-num">一</span>总体概况 <span class="en">Overview</span></h2>
+  <div class="kpi-box">
+    <div class="kpi"><div class="kpi-val ">88.1%</div><div class="kpi-lbl">团队 CSAT<br><span style="font-size:10px;color:#bbb">目标 ≥84%</span></div></div>
+    <div class="kpi"><div class="kpi-val">101</div><div class="kpi-lbl">总评价数</div></div>
+    <div class="kpi"><div class="kpi-val">74</div><div class="kpi-lbl">超赞 Superb</div></div>
+    <div class="kpi"><div class="kpi-val">13</div><div class="kpi-lbl">满意 Good</div></div>
+    <div class="kpi"><div class="kpi-val">2</div><div class="kpi-lbl">一般 Avg</div></div>
+    <div class="kpi"><div class="kpi-val amber">4</div><div class="kpi-lbl">不满意</div></div>
+    <div class="kpi"><div class="kpi-val red">8</div><div class="kpi-lbl">糟糕 Bad</div></div>
+  </div>
+
+  <div class="subsect-title" style="margin-top:4px">评分分布 Rating Distribution</div>
+  <div style="max-width:540px;margin-bottom:20px">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:7px"><div style="width:105px;font-size:11.5px;color:#555;text-align:right;white-space:nowrap">超赞 Superb</div><div style="flex:1;background:#e8ecf5;border-radius:3px;height:18px;overflow:hidden"><div style="width:73.3%;background:#1456F0;height:100%"></div></div><div style="width:65px;font-size:11.5px;color:#333">74 (73.3%)</div></div><div style="display:flex;align-items:center;gap:10px;margin-bottom:7px"><div style="width:105px;font-size:11.5px;color:#555;text-align:right;white-space:nowrap">满意 Good</div><div style="flex:1;background:#e8ecf5;border-radius:3px;height:18px;overflow:hidden"><div style="width:12.9%;background:#22c55e;height:100%"></div></div><div style="width:65px;font-size:11.5px;color:#333">13 (12.9%)</div></div><div style="display:flex;align-items:center;gap:10px;margin-bottom:7px"><div style="width:105px;font-size:11.5px;color:#555;text-align:right;white-space:nowrap">一般 Average</div><div style="flex:1;background:#e8ecf5;border-radius:3px;height:18px;overflow:hidden"><div style="width:2.0%;background:#f59e0b;height:100%"></div></div><div style="width:65px;font-size:11.5px;color:#333">2 (2.0%)</div></div><div style="display:flex;align-items:center;gap:10px;margin-bottom:7px"><div style="width:105px;font-size:11.5px;color:#555;text-align:right;white-space:nowrap">不满意</div><div style="flex:1;background:#e8ecf5;border-radius:3px;height:18px;overflow:hidden"><div style="width:4.0%;background:#f97316;height:100%"></div></div><div style="width:65px;font-size:11.5px;color:#333">4 (4.0%)</div></div><div style="display:flex;align-items:center;gap:10px;margin-bottom:7px"><div style="width:105px;font-size:11.5px;color:#555;text-align:right;white-space:nowrap">糟糕 Bad</div><div style="flex:1;background:#e8ecf5;border-radius:3px;height:18px;overflow:hidden"><div style="width:7.9%;background:#dc2626;height:100%"></div></div><div style="width:65px;font-size:11.5px;color:#333">8 (7.9%)</div></div>
+  </div>
+
+  <div class="subsect-title">渠道汇总 Channel Summary</div>
+  <table>
+    <thead><tr><th>渠道</th><th>合计</th><th>不满意</th><th>糟糕</th><th>负评合计</th><th>CSAT%</th></tr></thead>
+    <tbody>
+      <tr><td>邮件 Email</td><td>10</td><td>1</td><td>1</td><td class="neg-total">2</td><td class="csat-bad">80.0%</td></tr>
+      <tr><td>在线 LC</td><td>82</td><td>3</td><td>6</td><td class="neg-total">9</td><td class="csat-good">89.0%</td></tr>
+      <tr><td>电话 Phone</td><td>9</td><td>0</td><td>1</td><td class="neg-total">1</td><td class="csat-good">88.9%</td></tr>
+      <tr class="team-row"><td>合计 Total</td><td>101</td><td>4</td><td>8</td><td class="neg-total">12</td><td class="csat-good">88.1%</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 二: 个人明细 -->
+<div class="section">
+  <h2><span class="sect-num">二</span>个人满意度明细 <span class="en">Agent Breakdown</span></h2>
+
+  <div class="subsect-title">综合满意度（按 CSAT% 降序）</div>
+  <table>
+    <thead><tr>
+      <th>客服</th><th>总评</th><th>在线 LC</th><th>电话 Phone</th><th>邮件 Email</th>
+      <th>超赞</th><th>满意</th><th>一般</th><th>不满意</th><th>糟糕</th><th>负评合计</th><th>CSAT%</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>terrychen</td><td>8</td><td>8</td><td>0</td><td>0</td><td>5</td><td>3</td><td>0</td><td>0</td><td>0</td><td class="neg-total">0</td><td class="csat-good">100.0%</td></tr>
+<tr><td>muhamadfaisal</td><td>7</td><td>3</td><td>2</td><td>2</td><td>6</td><td>1</td><td>0</td><td>0</td><td>0</td><td class="neg-total">0</td><td class="csat-good">100.0%</td></tr>
+<tr><td>whitneylee</td><td>5</td><td>4</td><td>1</td><td>0</td><td>4</td><td>0</td><td>1</td><td>0</td><td>0</td><td class="neg-total">0</td><td class="csat-good">100.0%</td></tr>
+<tr><td>alvinsim</td><td>15</td><td>14</td><td>0</td><td>1</td><td>12</td><td>3</td><td>0</td><td>0</td><td>0</td><td class="neg-total">0</td><td class="csat-good">100.0%</td></tr>
+<tr><td>wilsonwong</td><td>19</td><td>16</td><td>0</td><td>3</td><td>16</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="neg-total">2</td><td class="csat-good">89.5%</td></tr>
+<tr><td>jacelynlim</td><td>8</td><td>6</td><td>1</td><td>1</td><td>4</td><td>2</td><td>1</td><td>1</td><td>0</td><td class="neg-total">1</td><td class="csat-good">87.5%</td></tr>
+<tr><td>vincentyew</td><td>7</td><td>7</td><td>0</td><td>0</td><td>6</td><td>0</td><td>0</td><td>0</td><td>1</td><td class="neg-total">1</td><td class="csat-good">85.7%</td></tr>
+<tr><td>calventan</td><td>12</td><td>9</td><td>1</td><td>2</td><td>8</td><td>2</td><td>0</td><td>0</td><td>2</td><td class="neg-total">2</td><td class="csat-bad">83.3%</td></tr>
+<tr><td>azamuddin</td><td>8</td><td>5</td><td>2</td><td>1</td><td>6</td><td>0</td><td>0</td><td>0</td><td>2</td><td class="neg-total">2</td><td class="csat-bad">75.0%</td></tr>
+<tr><td>zaydentan</td><td>4</td><td>3</td><td>1</td><td>0</td><td>2</td><td>1</td><td>0</td><td>0</td><td>1</td><td class="neg-total">1</td><td class="csat-bad">75.0%</td></tr>
+<tr><td>jeanliew</td><td>8</td><td>7</td><td>1</td><td>0</td><td>5</td><td>0</td><td>0</td><td>2</td><td>1</td><td class="neg-total">3</td><td class="csat-bad">62.5%</td></tr>
+      <tr class="team-row"><td>Team</td><td>101</td><td>82</td><td>9</td><td>10</td>
+        <td>74</td><td>13</td><td>2</td><td>4</td><td>8</td>
+        <td class="neg-total">12</td><td class="csat-good">88.1%</td></tr>
+    </tbody>
+  </table>
+
+  <div class="subsect-title mt">渠道 CSAT 拆分 <span class="en" style="font-size:11px;font-weight:400;color:#aaa">— 样本量为 0 时显示 —</span></div>
+  <table>
+    <thead><tr>
+      <th>客服</th>
+      <th>在线 LC CSAT <span class="en">(n)</span></th>
+      <th>电话 Phone CSAT <span class="en">(n)</span></th>
+      <th>邮件 Email CSAT <span class="en">(n)</span></th>
+    </tr></thead>
+    <tbody>
+      <tr><td>terrychen</td><td class="csat-good">100.0%</td><td class="csat-na">— </td><td class="csat-na">— </td></tr>
+<tr><td>muhamadfaisal</td><td class="csat-good">100.0%</td><td class="csat-good">100.0%</td><td class="csat-good">100.0%</td></tr>
+<tr><td>whitneylee</td><td class="csat-good">100.0%</td><td class="csat-good">100.0%</td><td class="csat-na">— </td></tr>
+<tr><td>alvinsim</td><td class="csat-good">100.0%</td><td class="csat-na">— </td><td class="csat-good">100.0%</td></tr>
+<tr><td>wilsonwong</td><td class="csat-good">93.8%</td><td class="csat-na">— </td><td class="csat-bad">66.7%</td></tr>
+<tr><td>jacelynlim</td><td class="csat-bad">83.3%</td><td class="csat-good">100.0%</td><td class="csat-good">100.0%</td></tr>
+<tr><td>vincentyew</td><td class="csat-good">85.7%</td><td class="csat-na">— </td><td class="csat-na">— </td></tr>
+<tr><td>calventan</td><td class="csat-good">88.9%</td><td class="csat-good">100.0%</td><td class="csat-bad">50.0%</td></tr>
+<tr><td>azamuddin</td><td class="csat-bad">80.0%</td><td class="csat-bad">50.0%</td><td class="csat-good">100.0%</td></tr>
+<tr><td>zaydentan</td><td class="csat-bad">66.7%</td><td class="csat-good">100.0%</td><td class="csat-na">— </td></tr>
+<tr><td>jeanliew</td><td class="csat-bad">57.1%</td><td class="csat-good">100.0%</td><td class="csat-na">— </td></tr>
+      <tr class="team-row"><td>Team</td>
+        <td class="csat-good">89.0% <span class="en">(82)</span></td>
+        <td class="csat-good">88.9% <span class="en">(9)</span></td>
+        <td class="csat-bad">80.0% <span class="en">(10)</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 三: 分类分布 -->
+<div class="section">
+  <h2><span class="sect-num">三</span>不满意+糟糕工单分类分布 <span class="en">Negative Ticket Categories</span></h2>
+  <p style="font-size:12px;color:#888;margin-bottom:16px">合计 12 条负评工单（不满意 4 + 糟糕 8），每条工单可含多个分类标签，占比 = 该分类出现次数 / 12。</p>
+
+  <table>
+    <thead><tr><th>分类</th><th style="text-align:center">级</th><th>合计</th><th>占比</th><th>不满意</th><th>糟糕</th></tr></thead>
+    <tbody><tr><td>开户前咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>7</td><td class="pct-col">58.3%</td><td>2</td><td>5</td></tr>
+<tr><td>其他身份开户咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>4</td><td class="pct-col">33.3%</td><td>1</td><td>3</td></tr>
+<tr><td>开户后咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>3</td><td class="pct-col">25.0%</td><td>1</td><td>2</td></tr>
+<tr><td>修改资料</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>3</td><td class="pct-col">25.0%</td><td>1</td><td>2</td></tr>
+<tr><td>美国身份开户咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>2</td><td class="pct-col">16.7%</td><td>1</td><td>1</td></tr>
+<tr><td>入金</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>1</td><td class="pct-col">8.3%</td><td>1</td><td>0</td></tr>
+<tr><td>销户</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>1</td><td class="pct-col">8.3%</td><td>0</td><td>1</td></tr>
+<tr><td>入金其他问题</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td class="pct-col">8.3%</td><td>1</td><td>0</td></tr>
+<tr><td>注销证券账户（已开户）</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td class="pct-col">8.3%</td><td>0</td><td>1</td></tr>
+<tr><td>内地身份开户咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td class="pct-col">8.3%</td><td>0</td><td>1</td></tr></tbody>
+  </table>
+  
+</div>
+
+<!-- 四: 客服负评分类明细 -->
+<div class="section">
+  <h2><span class="sect-num">四</span>客服负评分类明细 <span class="en">Agent × Category</span></h2>
+  <p style="font-size:12px;color:#888;margin-bottom:14px">按客服分组，仅展示 L1/L2 分类，同一工单含多个分类时各自计入。</p>
+  <div style="margin-bottom:14px;display:flex;align-items:center;gap:10px">
+    <label style="font-size:13px;color:#555;white-space:nowrap">查看客服：</label>
+    <select id="agentFilterSel" onchange="filterAgentCat(this.value)"
+      style="font-size:13px;padding:5px 12px;border:1px solid #c0d0f0;border-radius:6px;color:#1a1a2e;cursor:pointer;background:#fff">
+      <option value="all">全部 (7 人)</option>
+      <option value="jeanliew">jeanliew — 62.5% | 负评 3</option><option value="calventan">calventan — 83.3% | 负评 2</option><option value="azamuddin">azamuddin — 75.0% | 负评 2</option><option value="wilsonwong">wilsonwong — 89.5% | 负评 2</option><option value="jacelynlim">jacelynlim — 87.5% | 负评 1</option><option value="zaydentan">zaydentan — 75.0% | 负评 1</option><option value="vincentyew">vincentyew — 85.7% | 负评 1</option>
+    </select>
+  </div>
+  <table id="agentCatTable">
+    <thead><tr><th>客服 / 分类</th><th style="text-align:center">级</th><th>合计</th><th>不满意</th><th>糟糕</th></tr></thead>
+    <tbody><tr data-agent="jeanliew" style="background:#f0f4ff;cursor:pointer" onclick="toggleAgentCat('ag-jeanliew', this)"><td colspan="5" style="font-weight:700;font-size:13px;padding:9px 10px"><span id="ag-jeanliew-icon" style="font-size:11px;margin-right:6px;color:#1456F0">▶</span>jeanliew <span class="csat-bad">62.5%</span> <span style="color:#888;font-size:11px;font-weight:400">| 负评 3 条</span></td></tr>
+<tr data-agent="jeanliew" class="ag-jeanliew-detail" style="display:none"><td style="padding-left:24px">开户前咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>3</td><td>2</td><td>1</td></tr>
+<tr data-agent="jeanliew" class="ag-jeanliew-detail" style="display:none"><td style="padding-left:24px">其他身份开户咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>2</td><td>1</td><td>1</td></tr>
+<tr data-agent="jeanliew" class="ag-jeanliew-detail" style="display:none"><td style="padding-left:24px">美国身份开户咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td>1</td><td>0</td></tr>
+<tr data-agent="calventan" style="background:#f0f4ff;cursor:pointer" onclick="toggleAgentCat('ag-calventan', this)"><td colspan="5" style="font-weight:700;font-size:13px;padding:9px 10px"><span id="ag-calventan-icon" style="font-size:11px;margin-right:6px;color:#1456F0">▶</span>calventan <span class="csat-bad">83.3%</span> <span style="color:#888;font-size:11px;font-weight:400">| 负评 2 条</span></td></tr>
+<tr data-agent="calventan" class="ag-calventan-detail" style="display:none"><td style="padding-left:24px">开户前咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr data-agent="calventan" class="ag-calventan-detail" style="display:none"><td style="padding-left:24px">其他身份开户咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td>0</td><td>1</td></tr>
+<tr data-agent="calventan" class="ag-calventan-detail" style="display:none"><td style="padding-left:24px">开户后咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr data-agent="calventan" class="ag-calventan-detail" style="display:none"><td style="padding-left:24px">修改资料</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td>0</td><td>1</td></tr>
+<tr data-agent="azamuddin" style="background:#f0f4ff;cursor:pointer" onclick="toggleAgentCat('ag-azamuddin', this)"><td colspan="5" style="font-weight:700;font-size:13px;padding:9px 10px"><span id="ag-azamuddin-icon" style="font-size:11px;margin-right:6px;color:#1456F0">▶</span>azamuddin <span class="csat-bad">75.0%</span> <span style="color:#888;font-size:11px;font-weight:400">| 负评 2 条</span></td></tr>
+<tr data-agent="azamuddin" class="ag-azamuddin-detail" style="display:none"><td style="padding-left:24px">开户前咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr data-agent="azamuddin" class="ag-azamuddin-detail" style="display:none"><td style="padding-left:24px">美国身份开户咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td>0</td><td>1</td></tr>
+<tr data-agent="azamuddin" class="ag-azamuddin-detail" style="display:none"><td style="padding-left:24px">开户后咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr data-agent="azamuddin" class="ag-azamuddin-detail" style="display:none"><td style="padding-left:24px">修改资料</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td>0</td><td>1</td></tr>
+<tr data-agent="wilsonwong" style="background:#f0f4ff;cursor:pointer" onclick="toggleAgentCat('ag-wilsonwong', this)"><td colspan="5" style="font-weight:700;font-size:13px;padding:9px 10px"><span id="ag-wilsonwong-icon" style="font-size:11px;margin-right:6px;color:#1456F0">▶</span>wilsonwong <span class="csat-good">89.5%</span> <span style="color:#888;font-size:11px;font-weight:400">| 负评 2 条</span></td></tr>
+<tr data-agent="wilsonwong" class="ag-wilsonwong-detail" style="display:none"><td style="padding-left:24px">入金</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>1</td><td>1</td><td>0</td></tr>
+<tr data-agent="wilsonwong" class="ag-wilsonwong-detail" style="display:none"><td style="padding-left:24px">开户前咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr data-agent="wilsonwong" class="ag-wilsonwong-detail" style="display:none"><td style="padding-left:24px">入金其他问题</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td>1</td><td>0</td></tr>
+<tr data-agent="wilsonwong" class="ag-wilsonwong-detail" style="display:none"><td style="padding-left:24px">其他身份开户咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td>0</td><td>1</td></tr>
+<tr data-agent="jacelynlim" style="background:#f0f4ff;cursor:pointer" onclick="toggleAgentCat('ag-jacelynlim', this)"><td colspan="5" style="font-weight:700;font-size:13px;padding:9px 10px"><span id="ag-jacelynlim-icon" style="font-size:11px;margin-right:6px;color:#1456F0">▶</span>jacelynlim <span class="csat-good">87.5%</span> <span style="color:#888;font-size:11px;font-weight:400">| 负评 1 条</span></td></tr>
+<tr data-agent="jacelynlim" class="ag-jacelynlim-detail" style="display:none"><td style="padding-left:24px">开户后咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>1</td><td>1</td><td>0</td></tr>
+<tr data-agent="jacelynlim" class="ag-jacelynlim-detail" style="display:none"><td style="padding-left:24px">修改资料</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td>1</td><td>0</td></tr>
+<tr data-agent="zaydentan" style="background:#f0f4ff;cursor:pointer" onclick="toggleAgentCat('ag-zaydentan', this)"><td colspan="5" style="font-weight:700;font-size:13px;padding:9px 10px"><span id="ag-zaydentan-icon" style="font-size:11px;margin-right:6px;color:#1456F0">▶</span>zaydentan <span class="csat-bad">75.0%</span> <span style="color:#888;font-size:11px;font-weight:400">| 负评 1 条</span></td></tr>
+<tr data-agent="zaydentan" class="ag-zaydentan-detail" style="display:none"><td style="padding-left:24px">销户</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr data-agent="zaydentan" class="ag-zaydentan-detail" style="display:none"><td style="padding-left:24px">注销证券账户（已开户）</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td>0</td><td>1</td></tr>
+<tr data-agent="vincentyew" style="background:#f0f4ff;cursor:pointer" onclick="toggleAgentCat('ag-vincentyew', this)"><td colspan="5" style="font-weight:700;font-size:13px;padding:9px 10px"><span id="ag-vincentyew-icon" style="font-size:11px;margin-right:6px;color:#1456F0">▶</span>vincentyew <span class="csat-good">85.7%</span> <span style="color:#888;font-size:11px;font-weight:400">| 负评 1 条</span></td></tr>
+<tr data-agent="vincentyew" class="ag-vincentyew-detail" style="display:none"><td style="padding-left:24px">开户前咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr data-agent="vincentyew" class="ag-vincentyew-detail" style="display:none"><td style="padding-left:24px">内地身份开户咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td>0</td><td>1</td></tr></tbody>
+  </table>
+</div>
+<script>
+function toggleAgentCat(gid, headerRow) {
+  var details = document.querySelectorAll('.' + gid + '-detail');
+  var icon = document.getElementById(gid + '-icon');
+  var isHidden = details.length > 0 && details[0].style.display === 'none';
+  details.forEach(function(r) { r.style.display = isHidden ? '' : 'none'; });
+  if (icon) icon.textContent = isHidden ? '▼' : '▶';
+}
+function filterAgentCat(val) {
+  document.querySelectorAll('#agentCatTable [data-agent]').forEach(function(el) {
+    if (val === 'all') {
+      el.style.display = '';
+      // re-collapse detail rows when switching back to all
+      if (el.classList.length && el.classList[0] && el.classList[0].endsWith('-detail')) {
+        el.style.display = 'none';
+      }
+    } else {
+      var isHeader = !el.classList.length || !el.classList[0].endsWith('-detail');
+      el.style.display = (el.dataset.agent === val) ? '' : 'none';
+      // auto-expand selected agent's details
+      if (el.dataset.agent === val && el.classList.length && el.classList[0].endsWith('-detail')) {
+        el.style.display = '';
+      }
+    }
+  });
+  // update icons
+  document.querySelectorAll('#agentCatTable [id$="-icon"]').forEach(function(icon) {
+    var gid = icon.id.replace('-icon', '');
+    var details = document.querySelectorAll('.' + gid + '-detail');
+    if (details.length > 0) icon.textContent = details[0].style.display === 'none' ? '▶' : '▼';
+  });
+}
+</script>
+
+<!-- 五: 渠道 × 分类 -->
+<div class="section">
+  <h2><span class="sect-num">五</span>渠道 × 分类 <span class="en">Channel × Category</span></h2>
+  <table>
+    <thead><tr><th>分类</th><th style="text-align:center">级</th><th>在线 LC</th><th>电话 Phone</th><th>邮件 Email</th><th>合计</th></tr></thead>
+    <tbody><tr><td>开户前咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>7</td><td>—</td><td>—</td><td class="neg-total">7</td></tr>
+<tr><td>其他身份开户咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>4</td><td>—</td><td>—</td><td class="neg-total">4</td></tr>
+<tr><td>开户后咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>1</td><td>1</td><td>1</td><td class="neg-total">3</td></tr>
+<tr><td>修改资料</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td>1</td><td>1</td><td class="neg-total">3</td></tr>
+<tr><td>美国身份开户咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>2</td><td>—</td><td>—</td><td class="neg-total">2</td></tr>
+<tr><td>入金</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>—</td><td>—</td><td>1</td><td class="neg-total">1</td></tr>
+<tr><td>销户</td><td style="color:#aaa;font-size:11px;text-align:center">L1</td><td>1</td><td>—</td><td>—</td><td class="neg-total">1</td></tr>
+<tr><td>入金其他问题</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>—</td><td>—</td><td>1</td><td class="neg-total">1</td></tr>
+<tr><td>注销证券账户（已开户）</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td>—</td><td>—</td><td class="neg-total">1</td></tr>
+<tr><td>内地身份开户咨询</td><td style="color:#aaa;font-size:11px;text-align:center">L2</td><td>1</td><td>—</td><td>—</td><td class="neg-total">1</td></tr></tbody>
+  </table>
+</div>
+
+<!-- 六: 周趋势 -->
+<div class="section">
+  <h2><span class="sect-num">六</span>周趋势 <span class="en">Weekly Trend</span></h2>
+  <div style="position:relative;max-height:280px;margin-bottom:20px">
+    <canvas id="weekChart"></canvas>
+  </div>
+  <table>
+    <thead><tr><th>周期</th><th>总评</th><th>不满意</th><th>糟糕</th><th>负评合计</th><th>CSAT%</th></tr></thead>
+    <tbody>
+      <tr><td>07/11-07/17</td><td>72</td><td>3</td><td>8</td><td class="neg-total">11</td><td class="csat-good">84.7%</td></tr>
+      <tr><td>07/18-07/24</td><td>60</td><td>4</td><td>11</td><td class="neg-total">15</td><td class="csat-bad">75.0%</td></tr>
+      <tr><td>07/25-07/31</td><td>42</td><td>2</td><td>7</td><td class="neg-total">9</td><td class="csat-bad">78.6%</td></tr>
+      <tr><td>W1 (08/01-08/07)</td><td>55</td><td>3</td><td>5</td><td class="neg-total">8</td><td class="csat-good">85.5%</td></tr>
+      <tr><td>W2 (08/08-08/13)</td><td>46</td><td>1</td><td>3</td><td class="neg-total">4</td><td class="csat-good">91.3%</td></tr>
+      <tr class="team-row"><td>合计</td><td>101</td><td>4</td><td>8</td><td class="neg-total">12</td><td class="csat-good">88.1%</td></tr>
+    </tbody>
+  </table>
+</div>
+<script>
+(function() {
+  var wLabels = ["07/11-07/17","07/18-07/24","07/25-07/31","W1 (08/01-08/07)","W2 (08/08-08/13)"];
+  var wTotals = [72,60,42,55,46];
+  var wNegs   = [11,15,9,8,4];
+  var wCsats  = [84.7,75,78.6,85.5,91.3];
+  if (wLabels.length && typeof Chart !== 'undefined') {
+    new Chart(document.getElementById('weekChart'), {
+      data: {
+        labels: wLabels,
+        datasets: [
+          { type:'bar',  label:'总评价', data:wTotals, backgroundColor:'rgba(20,86,240,0.18)', borderColor:'#1456F0', borderWidth:1.5, yAxisID:'y' },
+          { type:'bar',  label:'负评',   data:wNegs,   backgroundColor:'rgba(220,38,38,0.25)', borderColor:'#dc2626', borderWidth:1.5, yAxisID:'y' },
+          { type:'line', label:'CSAT%',  data:wCsats,  borderColor:'#15803d', backgroundColor:'transparent', pointBackgroundColor:'#15803d', borderWidth:2.5, tension:0.35, yAxisID:'y2', spanGaps:true }
+        ]
+      },
+      options: {
+        responsive:true,
+        interaction:{ mode:'index', intersect:false },
+        scales: {
+          y:  { beginAtZero:true, title:{ display:true, text:'评价数' }, position:'left' },
+          y2: { min:0, max:100, title:{ display:true, text:'CSAT%' }, position:'right', grid:{ drawOnChartArea:false } }
+        },
+        plugins: {
+          legend:{ position:'top' },
+          tooltip:{ callbacks:{ label:function(c){ return c.dataset.yAxisID==='y2' ? 'CSAT: '+(c.raw!==null?c.raw.toFixed(1)+'%':'-') : c.dataset.label+': '+c.raw; } } }
+        }
+      }
+    });
+  }
+})();
+</script>
+
+<!-- 七: 负评工单明细 -->
+<div class="section">
+  <h2><span class="sect-num">七</span>负评工单明细 <span class="en">Negative Ticket List</span></h2>
+  <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px">
+    <select id="ntAgent" onchange="filterNegTable()" style="font-size:12px;padding:4px 10px;border:1px solid #c0d0f0;border-radius:6px;background:#fff">
+      <option value="">全部客服</option>
+      <option value="azamuddin">azamuddin</option><option value="calventan">calventan</option><option value="jacelynlim">jacelynlim</option><option value="jeanliew">jeanliew</option><option value="vincentyew">vincentyew</option><option value="wilsonwong">wilsonwong</option><option value="zaydentan">zaydentan</option>
+    </select>
+    <select id="ntCh" onchange="filterNegTable()" style="font-size:12px;padding:4px 10px;border:1px solid #c0d0f0;border-radius:6px;background:#fff">
+      <option value="">全部渠道</option>
+      <option value="LC">LC</option>
+      <option value="Phone">Phone</option>
+      <option value="Email">Email</option>
+    </select>
+    <select id="ntOpt" onchange="filterNegTable()" style="font-size:12px;padding:4px 10px;border:1px solid #c0d0f0;border-radius:6px;background:#fff">
+      <option value="">全部评级</option>
+      <option value="不满意">不满意</option>
+      <option value="糟糕">糟糕</option>
+    </select>
+    <select id="ntCat" onchange="filterNegTable()" style="font-size:12px;padding:4px 10px;border:1px solid #c0d0f0;border-radius:6px;background:#fff">
+      <option value="">全部分类</option>
+      <option value="入金">入金</option><option value="开户前咨询">开户前咨询</option><option value="开户后咨询">开户后咨询</option><option value="销户">销户</option>
+    </select>
+    <button onclick="resetNegFilter()" style="font-size:12px;padding:4px 12px;border:1px solid #c0d0f0;border-radius:6px;background:#f0f4ff;color:#1456F0;cursor:pointer">重置</button>
+    <span id="ntCount" style="font-size:12px;color:#888">共 12 条</span>
+  </div>
+  <table id="negTable">
+    <thead><tr><th>工单号</th><th>客服</th><th>渠道</th><th>评级</th><th>分类</th><th>客户留言</th></tr></thead>
+    <tbody><tr data-agent="zaydentan" data-ch="LC" data-opt="糟糕" data-cat="销户"><td style="font-size:11px;color:#888">10260812233637004986</td><td>zaydentan</td><td>LC</td><td class="csat-bad">糟糕</td><td style="white-space:normal;max-width:180px;font-size:11.5px">销户 / 注销证券账户（已开户）</td><td style="white-space:normal;max-width:280px;font-size:11.5px;color:#555"><span style="color:#bbb">—</span></td></tr>
+<tr data-agent="jeanliew" data-ch="LC" data-opt="不满意" data-cat="开户前咨询"><td style="font-size:11px;color:#888">10260811055810949480</td><td>jeanliew</td><td>LC</td><td class="csat-warn">不满意</td><td style="white-space:normal;max-width:180px;font-size:11.5px">开户前咨询 / 美国身份开户咨询</td><td style="white-space:normal;max-width:280px;font-size:11.5px;color:#555"><span style="color:#bbb">—</span></td></tr>
+<tr data-agent="jeanliew" data-ch="LC" data-opt="糟糕" data-cat="开户前咨询"><td style="font-size:11px;color:#888">10260810230407335252</td><td>jeanliew</td><td>LC</td><td class="csat-bad">糟糕</td><td style="white-space:normal;max-width:180px;font-size:11.5px">开户前咨询 / 其他身份开户咨询</td><td style="white-space:normal;max-width:280px;font-size:11.5px;color:#555"><span style="color:#bbb">—</span></td></tr>
+<tr data-agent="calventan" data-ch="LC" data-opt="糟糕" data-cat="开户前咨询"><td style="font-size:11px;color:#888">10260809002104400112</td><td>calventan</td><td>LC</td><td class="csat-bad">糟糕</td><td style="white-space:normal;max-width:180px;font-size:11.5px">开户前咨询 / 其他身份开户咨询</td><td style="white-space:normal;max-width:280px;font-size:11.5px;color:#555"><span style="color:#bbb">—</span></td></tr>
+<tr data-agent="wilsonwong" data-ch="LC" data-opt="糟糕" data-cat="开户前咨询"><td style="font-size:11px;color:#888">10260807173059420860</td><td>wilsonwong</td><td>LC</td><td class="csat-bad">糟糕</td><td style="white-space:normal;max-width:180px;font-size:11.5px">开户前咨询 / 其他身份开户咨询</td><td style="white-space:normal;max-width:280px;font-size:11.5px;color:#555"><span style="color:#bbb">—</span></td></tr>
+<tr data-agent="vincentyew" data-ch="LC" data-opt="糟糕" data-cat="开户前咨询"><td style="font-size:11px;color:#888">10260807121555428131</td><td>vincentyew</td><td>LC</td><td class="csat-bad">糟糕</td><td style="white-space:normal;max-width:180px;font-size:11.5px">开户前咨询 / 内地身份开户咨询</td><td style="white-space:normal;max-width:280px;font-size:11.5px;color:#555"><span style="color:#bbb">—</span></td></tr>
+<tr data-agent="jeanliew" data-ch="LC" data-opt="不满意" data-cat="开户前咨询"><td style="font-size:11px;color:#888">10260807063507593058</td><td>jeanliew</td><td>LC</td><td class="csat-warn">不满意</td><td style="white-space:normal;max-width:180px;font-size:11.5px">开户前咨询 / 其他身份开户咨询</td><td style="white-space:normal;max-width:280px;font-size:11.5px;color:#555"><span style="color:#bbb">—</span></td></tr>
+<tr data-agent="azamuddin" data-ch="LC" data-opt="糟糕" data-cat="开户前咨询"><td style="font-size:11px;color:#888">10260805030646801120</td><td>azamuddin</td><td>LC</td><td class="csat-bad">糟糕</td><td style="white-space:normal;max-width:180px;font-size:11.5px">开户前咨询 / 美国身份开户咨询</td><td style="white-space:normal;max-width:280px;font-size:11.5px;color:#555"><span style="color:#bbb">—</span></td></tr>
+<tr data-agent="azamuddin" data-ch="Phone" data-opt="糟糕" data-cat="开户后咨询"><td style="font-size:11px;color:#888">20260804215912940329</td><td>azamuddin</td><td>Phone</td><td class="csat-bad">糟糕</td><td style="white-space:normal;max-width:180px;font-size:11.5px">开户后咨询 / 修改资料</td><td style="white-space:normal;max-width:280px;font-size:11.5px;color:#555"><span style="color:#bbb">—</span></td></tr>
+<tr data-agent="calventan" data-ch="Email" data-opt="糟糕" data-cat="开户后咨询"><td style="font-size:11px;color:#888">50260802230944348668</td><td>calventan</td><td>Email</td><td class="csat-bad">糟糕</td><td style="white-space:normal;max-width:180px;font-size:11.5px">开户后咨询 / 修改资料</td><td style="white-space:normal;max-width:280px;font-size:11.5px;color:#555"><span style="color:#bbb">—</span></td></tr>
+<tr data-agent="jacelynlim" data-ch="LC" data-opt="不满意" data-cat="开户后咨询"><td style="font-size:11px;color:#888">10260802045014128533</td><td>jacelynlim</td><td>LC</td><td class="csat-warn">不满意</td><td style="white-space:normal;max-width:180px;font-size:11.5px">开户后咨询 / 修改资料</td><td style="white-space:normal;max-width:280px;font-size:11.5px;color:#555"><span style="color:#bbb">—</span></td></tr>
+<tr data-agent="wilsonwong" data-ch="Email" data-opt="不满意" data-cat="入金"><td style="font-size:11px;color:#888">50260801072547520898</td><td>wilsonwong</td><td>Email</td><td class="csat-warn">不满意</td><td style="white-space:normal;max-width:180px;font-size:11.5px">入金 / 入金其他问题</td><td style="white-space:normal;max-width:280px;font-size:11.5px;color:#555"><span style="color:#bbb">—</span></td></tr></tbody>
+  </table>
+</div>
+<script>
+function filterNegTable() {
+  var agent = document.getElementById('ntAgent').value;
+  var ch = document.getElementById('ntCh').value;
+  var opt = document.getElementById('ntOpt').value;
+  var cat = document.getElementById('ntCat').value;
+  var rows = document.querySelectorAll('#negTable tbody tr');
+  var shown = 0;
+  rows.forEach(function(r) {
+    var ok = (!agent || r.dataset.agent === agent) &&
+             (!ch    || r.dataset.ch === ch) &&
+             (!opt   || r.dataset.opt === opt) &&
+             (!cat   || r.dataset.cat === cat);
+    r.style.display = ok ? '' : 'none';
+    if (ok) shown++;
+  });
+  document.getElementById('ntCount').textContent = '共 ' + shown + ' 条';
+}
+function resetNegFilter() {
+  ['ntAgent','ntCh','ntOpt','ntCat'].forEach(function(id) { document.getElementById(id).value = ''; });
+  filterNegTable();
+}
+</script>
+
+
+
+<p style="font-size:11px;color:#bbb;text-align:center;margin-top:8px">生成时间：2026-08-13 &nbsp;|&nbsp; 数据来源：us-workspace.futuoa.com GetBadEvaluations</p>
+
+</body>
+</html>
