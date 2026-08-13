@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta charset="UTF-8"><title>US CSS 满意度报告</title>
+<style>body{font-family:sans-serif;padding:40px;color:#333}a{color:#1456F0}</style>
+</head>
+<body>
+<h2>US CSS 满意度报告</h2>
+<p>请点击下方链接查看对应周期报告：</p>
+<ul id="list"></ul>
+<script>
+// 报告文件列表由 CI 自动维护
+const reports = [];
+const ul = document.getElementById('list');
+reports.forEach(r => {
+  const li = document.createElement('li');
+  const a = document.createElement('a');
+  a.href = r; a.textContent = r;
+  li.appendChild(a); ul.appendChild(li);
+});
+if (!reports.length) ul.innerHTML = '<li style="color:#999">暂无报告</li>';
+</script>
+</body>
+</html>
